@@ -1,0 +1,22 @@
+{
+  "name": "POM",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:default": "npm run test:default:setup && npx playwright test tests/e2e/session.spec.ts",
+    "test:default:setup": "npx playwright test tests/setup/setup.spec.ts",
+    "test:decorator": "npx playwright test tests/e2e/page-decorator.spec.ts",
+    "test:extend": "npx playwright test tests/e2e/extend-test.spec.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.39.0",
+    "@types/node": "^20.9.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
